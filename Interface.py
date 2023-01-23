@@ -1,3 +1,4 @@
+#interface
 def interface(): 
     print("Blood calculator") 
     while True:
@@ -19,3 +20,11 @@ def interface():
             k=False
     print("Program ending")
 interface()
+
+#HDL Checker
+def HDL_input(): 
+    HDL=input("Enter the result:") 
+    HDL=int(HDL_value) 
+    return HDL 
+
+HDL_input()
