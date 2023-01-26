@@ -19,7 +19,7 @@ def interface():
             HDL_driver()
         elif choice=="2":
             LDL_driver()
-         elif choice=="3":
+        elif choice=="3":
             TOTAL_driver()  
     print("Program ending")
 
