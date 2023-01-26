@@ -10,6 +10,7 @@ def interface():
         print("Option:") 
         print("1: HDL")
         print("2: LDL")
+        print("3: Total Cholesterol")
         print("9: Quit") 
         choice = input("Select an option:") 
         if choice=="9": 
@@ -18,6 +19,8 @@ def interface():
             HDL_driver()
         elif choice=="2":
             LDL_driver()
+         elif choice=="3":
+            TOTAL_driver()  
     print("Program ending")
 
 #HDL driver
@@ -29,12 +32,12 @@ def HDL_driver():
 #HDL Classifier
 def HDL_analysis(HDL_int): 
     if HDL_int>=60: 
-        ans="Normal" 
+        ans1="Normal" 
     elif 40<=HDL_int<60: 
-        ans="Border line" 
+        ans1="Border line" 
     else: 
-        ans="Low" 
-    return ans 
+        ans1="Low" 
+    return ans1 
 
 #LDL driver
 def LDL_driver():
@@ -45,14 +48,29 @@ def LDL_driver():
 #LDL Classifier
 def LDL_analysis(LDL_int): 
     if LDL_int<130: 
-        ans="Normal" 
+        ans2="Normal" 
     elif 130<= LDL_int<159: 
-        ans="Border line" 
+        ans2="Border line" 
     elif 160<=LDL_int<189: 
-        ans="High" 
+        ans2="High" 
     else: 
-        ans="Very high" 
-    return ans 
+        ans2="Very high" 
+    return ans2 
+
+def TOTAL_driver():
+    input3=generic_input()
+    result3=TOTAL_analysis(input3)
+    generic_output(input3,result3)
+
+#TC Classifier
+def TOTAL_analysis(Total_int): 
+    if Total_int<200: 
+        ans3="Normal" 
+    elif 290<=Total_int<239: 
+        ans3="Border line" 
+    elif Total_int>=240: 
+        ans3="High" 
+    return ans3 
 
 #Generic input
 def generic_input(): 
