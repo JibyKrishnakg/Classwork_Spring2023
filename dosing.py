@@ -27,7 +27,7 @@ def BMI_input():
 
 def weight_conversion():
     weight_data = weight_input.split(" ")
-    weight = float(weight_data[0])
+    weight = int (weight_data[0])
     units = weight_data[1]
     if units == "lb":
         weight = weight / 2.205
@@ -41,7 +41,7 @@ def dosage_calculation(diagnosis,weight):
     print("CORRECT DOSAGE")
     print("For a patient weighing {} kg,".format(round(weight))
     print("  the correct dosage is {} mg the first day"
-          .formatround(dosage_mg_first_day))
+          .format(round(dosage_mg_first_day))
 
 diagnosis=dose_amount()
 weight_input = BMI_input()
