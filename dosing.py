@@ -39,9 +39,9 @@ def dosage_calculation(diagnosis,weight):
     dosage_mg_per_kg = dosages_mg_per_kg[diagnosis-1]
     dosage_mg_first_day = weight * dosage_mg_per_kg
     print("CORRECT DOSAGE")
-    print("For a patient weighing {} kg,".format(weight))
+    print("For a patient weighing {} kg,".format(round(weight))
     print("  the correct dosage is {} mg the first day"
-          .format(dosage_mg_first_day))
+          .formatround(dosage_mg_first_day))
 
 diagnosis=dose_amount()
 weight_input = BMI_input()
