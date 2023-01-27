@@ -50,3 +50,5 @@ dosage_calculation(diagnosis,weight)
 
 if __name__ == '__main__':
     dose_amount()
+
+
