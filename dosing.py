@@ -14,6 +14,7 @@ def dose_amount():
     print("2 - Acute bacterial sinusitis")
     print("3 - Community-acquired pneumonia")
     print("4 - Pharyngitis/tonsilitis")
+    print("5 - Quit()")
     diagnosis = int(input("Enter a number: "))
     return diagnosis
     
@@ -38,14 +39,14 @@ def dosage_calculation(diagnosis,weight):
     dosage_mg_per_kg = dosages_mg_per_kg[diagnosis-1]
     dosage_mg_first_day = weight * dosage_mg_per_kg
     print("CORRECT DOSAGE")
-    print("For a patient weighing {:.1f} kg,".format(weight))
-    print("  the correct dosage is {:.1f} mg the first day"
+    print("For a patient weighing {} kg,".format(weight))
+    print("  the correct dosage is {} mg the first day"
           .format(dosage_mg_first_day))
 
 diagnosis=dose_amount()
 weight_input = BMI_input()
 weight=weight_conversion()
-[diagnosis,weight]=dosage_calculation(diagnosis,weight)
+dosage_calculation(diagnosis,weight)
 
 if __name__ == '__main__':
     dose_amount()
