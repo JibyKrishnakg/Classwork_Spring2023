@@ -1,0 +1,6 @@
+
+	myenv1/
+	.DS_Store
+	.gitignore
+	.ipynb_checkpoints/
+	__pycache__/
