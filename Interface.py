@@ -1,7 +1,7 @@
-print("This is the database.py file")
+print("This is the interface.py file")
 print("Python thinks this is called {}".format(__name__))
 
-#interface
+#interface [command marker]
 
 def interface(): 
     print("Blood calculator") 
@@ -66,7 +66,7 @@ def TOTAL_driver():
 def TOTAL_analysis(Total_int): 
     if Total_int<200: 
         ans3="Normal" 
-    elif 290<=Total_int<239: 
+    elif 200<=Total_int<239: 
         ans3="Border line" 
     elif Total_int>=240: 
         ans3="High" 

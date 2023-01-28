@@ -27,7 +27,7 @@ def BMI_input():
 
 def weight_conversion():
     weight_data = weight_input.split(" ")
-    weight = float(weight_data[0])
+    weight = int (weight_data[0])
     units = weight_data[1]
     if units == "lb":
         weight = weight / 2.205
