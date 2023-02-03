@@ -1,19 +1,20 @@
 print("This is the interface.py file")
 print("Python thinks this is called {}".format(__name__))
 
-#interface [command marker]
+# interface [command marker]
 
-def interface(): 
-    print("Blood calculator") 
-    k=True
+
+def interface():
+    print("Blood calculator")
+    k = True
     while k:
-        print("Option:") 
+        print("Option:")
         print("1: HDL")
         print("2: LDL")
         print("3: Total Cholesterol")
-        print("9: Quit") 
-        choice = input("Select an option:") 
-        if choice=="9": 
+        print("9: Quit")
+        choice = input("Select an option:")
+        if choice == "9": 
             k=False
         elif choice=="1":
             HDL_driver()
