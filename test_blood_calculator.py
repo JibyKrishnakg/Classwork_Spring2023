@@ -14,7 +14,7 @@ def test_HDL_analaysis_borderline():
     # Act
     answer=HDL_analysis(HDL_input)
     # Assert
-    assert answer=="Border line"
+    assert answer == "Border line"
 
 def test_HDL_analaysis_low():
     from Interface import HDL_analysis
@@ -23,7 +23,7 @@ def test_HDL_analaysis_low():
     # Act
     answer=HDL_analysis(HDL_input)
     # Assert
-    assert answer=="Low"
+    assert answer == "Low"
 
 # pytest: One function Decorator
 # Decorator functions gives additional functionality
@@ -33,6 +33,8 @@ def test_HDL_analaysis_low():
 # User intervention Yes [not pytest applicable]
 # Companies specific Style guide for easy readability "Variable name", "checker points" 
 # Python has PEP 8 Style guide
+# Order in the pytest decorator need not match with the function input parameters
+# List of items under pytest decorator can be taken as separate variable and add variable name to the decorator
 
 
 import pytest
