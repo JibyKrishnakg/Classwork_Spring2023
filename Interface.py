@@ -16,9 +16,9 @@ def interface():
         choice = input("Select an option:")
         if choice == "9": 
             k=False
-        elif choice=="1":
+        elif choice == "1":
             HDL_driver()
-        elif choice=="2":
+        elif choice == "2":
             LDL_driver()
         elif choice=="3":
             TOTAL_driver()  
