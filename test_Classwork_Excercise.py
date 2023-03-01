@@ -1,23 +1,46 @@
 # Line equation
 
-# Python test method
+# Classwork Example1
 
-import pytest
+def line_inputs():
+    (x1,y1)= input("Enter the first value of the x,y coordinate of the line equation: ")
+    (x1)=int(x1)
+    (y1)=int(y1)
+    (x2,y2)= input("Enter the second value of the x,y coordinate of the line equation: ")
+    (x2)=int(x2)
+    (y2)=int(y2)
+    x= input("Enter the new value of the x coordinate of the line equation: ")
+    (x)=int(x)
+    return (x,x1,y1,x2,y2)
 
-list_of_points=[(1, 2),(2, 3),(3,4),(4,5)]
-@pytest.mark.parametrize("x,expected", 
-list_of_points)
-def test_line_equation(x,expected):
-    answer=line_equation(x)
-    assert answer==expected
-
-x1=2
-x2=3
-y1=2
-y2=3
-def line_equation(x):
-    y = (((y2-y1)/(x2-x1))*(x-x1)) + y2
+def line_equation(x,x1,y1,x2,y2):
+    y = (((y2-y1)/(x2-x1))*(x-x1)) + y1
     return y
+
+(x,x1,y1,x2,y2)=line_inputs()
+y= line_equation(x,x1,y1,x2,y2)
+print(y)
+
+
+def line_equation(x,x1,y1,x2,y2):
+    y = (((y2-y1)/(x2-x1))*(x-x1)) + y1
+    return y
+
+y= line_equation(x,x1,y1,x2,y2)
+print(y)
+
+
+
+def line_equation(x,x1,y1,x2,y2):
+    y = (((y2-y1)/(x2-x1))*(x-x1)) + y1
+    return y
+
+x1=2 
+x2=3 
+y1=2 
+y2=3 
+y= line_equation(x,x1,y1,x2,y2)
+print(y)
 
 
 #     Write a unit test for this function before you code the function itself.
@@ -35,6 +58,16 @@ def line_equation(x):
 # receives as parameters two tuples, (x1, y1), (x2, y2), that represent two (x, y) coordinates on a plane,
 # receives a parameter, x, that is a new value on the x-coordinate of the above plane,
 # returns a value y that is on the line created by the first two points.
+
+
+# import pytest
+
+# list_of_points=[(1, 2),(2, 3),(3,4),(4,5)]
+# @pytest.mark.parametrize("x,expected", 
+# list_of_points)
+# def test_line_equation(x,expected):
+#     answer=line_equation(x)
+#     assert answer==expected
 
 # Direct method to print value of y for each value of x
 
