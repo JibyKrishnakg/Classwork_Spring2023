@@ -1,0 +1,28 @@
+def test_add1():
+  #  from add import add
+    answer =add(1,2)
+    assert answer==(3)
+
+# pytest uses a function pytest approx to show approximate values
+
+import pytest
+
+def test_add2():
+   # from add import add
+    answer =add(0.1,0.2)
+    assert answer==pytest.approx(0.3)
+
+import pytest
+
+def test_add3():
+   # from add import add
+    answer =add(0.1,0.2)
+    print(pytest.approx(0.3))
+
+def add():
+    c=a+b
+    return c
+
+a=test_add1()
+b=test_add2()
+c=test_add3()
